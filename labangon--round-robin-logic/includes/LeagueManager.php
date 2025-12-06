@@ -115,7 +115,7 @@ class LeagueManager {
      */
     public function recalculateLeagueStandings($league_id) {
         // Fetch League Rules
-        $league_query = "SELECT points_per_win, points_per_draw, points_per_loss FROM leagues WHERE id = :league_id";
+        $league_query = "SELECT * FROM leagues WHERE id = :league_id";
         $stmt = $this->db->prepare($league_query);
         $stmt->bindParam(':league_id', $league_id);
         $stmt->execute();

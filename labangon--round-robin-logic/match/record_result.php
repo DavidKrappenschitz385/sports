@@ -101,12 +101,12 @@ if (isset($_GET['id'])) {
                 <div class="score-inputs">
                     <div style="text-align: center;">
                         <strong><?php echo htmlspecialchars($match['home_team']); ?></strong><br>
-                        <input type="number" name="home_score" min="0" max="50" required>
+                        <input type="number" name="home_score" min="0" required>
                     </div>
                     <div class="vs">VS</div>
                     <div style="text-align: center;">
                         <strong><?php echo htmlspecialchars($match['away_team']); ?></strong><br>
-                        <input type="number" name="away_score" min="0" max="50" required>
+                        <input type="number" name="away_score" min="0" required>
                     </div>
                 </div>
             </div>
